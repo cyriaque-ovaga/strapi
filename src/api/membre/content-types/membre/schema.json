@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "membres",
+  "info": {
+    "singularName": "membre",
+    "pluralName": "membres",
+    "displayName": "Membre",
+    "name": "membre"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "fonction": {
+      "type": "string"
+    },
+    "ordre": {
+      "type": "string"
+    },
+    "date_adhesion": {
+      "type": "date"
+    },
+    "adresse": {
+      "type": "string"
+    },
+    "date_naissance": {
+      "type": "date"
+    },
+    "lieu_naissance": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "numero_transaction": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "categorie": {
+      "type": "string"
+    },
+    "federation": {
+      "type": "string"
+    }
+  }
+}

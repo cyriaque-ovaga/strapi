@@ -1,13 +1,27 @@
-module.exports = ({ env }) => ({
-  connection: {
-    client: 'postgres',
+const path = require("path");
+
+if (process.env.branche == "master") {
+  ma_config = {
+    client: "mysql",
     connection: {
-      host: env('PGHOST', '127.0.0.1'),
-      port: env.int('PGPORT', 5432),
-      database: env('PGDATABASE', 'strapi'),
-      user: env('PGUSER', 'strapi'),
-      password: env('PGPASSWORD', 'password'),
-      ssl: env.bool(true),
+      host: process.env.DATABASE_HOST,
+      port: process.env.DATABASE_PORT,
+      database: process.env.DATABASE_NAME,
+      user: process.env.DATABASE_USERNAME,
+      password: process.env.DATABASE_PASSWORD,
     },
-  },
+    debug: false,
+  };
+} else {
+  ma_config = {
+    client: "sqlite",
+    connection: {
+      filename: path.join(__dirname, "..", ".tmp/data.db"),
+    },
+    useNullAsDefault: true,
+  };
+}
+
+module.exports = ({ env }) => ({
+  connection: ma_config,
 });

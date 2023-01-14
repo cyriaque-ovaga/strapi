@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agendas",
+  "info": {
+    "name": "agendas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "adresse": {
+      "type": "string"
+    },
+    "objet": {
+      "type": "string"
+    },
+    "messages": {
+      "type": "richtext"
+    },
+    "lien_article": {
+      "type": "text"
+    },
+    "date": {
+      "type": "string"
+    }
+  }
+}

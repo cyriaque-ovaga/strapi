@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/communiques",
+      "handler": "communique.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/communiques/count",
+      "handler": "communique.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/communiques/:id",
+      "handler": "communique.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/communiques",
+      "handler": "communique.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/communiques/:id",
+      "handler": "communique.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/communiques/:id",
+      "handler": "communique.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "federations",
+  "info": {
+    "name": "federation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "adresse": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    }
+  }
+}

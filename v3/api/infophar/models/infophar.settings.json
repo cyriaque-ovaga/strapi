@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "infophars",
+  "info": {
+    "name": "infophar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "blocun": {
+      "type": "string"
+    },
+    "blocdeux": {
+      "type": "string"
+    }
+  }
+}

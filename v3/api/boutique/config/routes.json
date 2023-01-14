@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/boutiques",
+      "handler": "boutique.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/boutiques/count",
+      "handler": "boutique.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/boutiques/:id",
+      "handler": "boutique.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/boutiques",
+      "handler": "boutique.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/boutiques/:id",
+      "handler": "boutique.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/boutiques/:id",
+      "handler": "boutique.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/comitecentral",
+      "handler": "comitecentral.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/comitecentral",
+      "handler": "comitecentral.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/comitecentral",
+      "handler": "comitecentral.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

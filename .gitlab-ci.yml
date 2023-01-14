@@ -1,0 +1,57 @@
+image: node:latest
+
+stages:
+  - deploy
+
+deploy_dev:
+  stage: deploy
+  image: ruby:latest
+  environment:
+    name: Dev
+    url: $DEV_URL
+  before_script:
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
+  script:
+    - dpl --provider=heroku --app=$HEROKU_APP_DEV --api-key=$HEROKU_API_KEY
+  only:
+    - dev
+
+deploy_master:
+  stage: deploy
+  image: ruby:latest
+  environment:
+    name: Dev
+    url: $DEV_URL
+  before_script:
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
+  script:
+    - dpl --provider=heroku --app=$HEROKU_APP_MASTER --api-key=$HEROKU_API_KEY
+  only:
+    - master
+
+# deploy_master:
+#     stage: deploy
+#     environment:
+#       name: production
+#       url: $PROD_URL
+#     # Pull docker image
+#     image: 'mjsarfatti/gitlab-ci-pipeline-php-aws:latest'
+#     # Setup AWS CLI to have proper credential keys
+#     before_script:
+#         - 'mkdir ~/.aws/'
+#         - 'touch ~/.aws/credentials'
+#         - 'printf "[eb-cli]\naws_access_key_id = %s\naws_secret_access_key = %s\n" "$AWS_ACCESS_KEY_ID" "$AWS_SECRET_ACCESS_KEY" >> ~/.aws/credentials'
+#     # Run deployment using EB CLI deploy on master branch
+#     script:
+#         - 'git checkout master'
+#         - npm i
+#         - echo | eb init $AWS_EB_NAME -r "eu-west-3" -p "Node.js"
+#         - eb deploy $AWS_EB_ENVIRONMENT
+#     # Ensure to run deployment only on master branch
+#     only:
+#         - master
+

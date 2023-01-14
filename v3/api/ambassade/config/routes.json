@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ambassades",
+      "handler": "ambassade.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ambassades/count",
+      "handler": "ambassade.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ambassades/:id",
+      "handler": "ambassade.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ambassades",
+      "handler": "ambassade.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ambassades/:id",
+      "handler": "ambassade.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ambassades/:id",
+      "handler": "ambassade.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

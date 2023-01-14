@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/infophar",
+      "handler": "infophar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/infophar",
+      "handler": "infophar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/infophar",
+      "handler": "infophar.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

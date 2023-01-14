@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ambassades",
+  "info": {
+    "name": "ambassade"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "responsable": {
+      "type": "string"
+    },
+    "nom": {
+      "type": "string"
+    },
+    "adresse": {
+      "type": "string"
+    },
+    "numero_telephone": {
+      "type": "string"
+    },
+    "departement": {
+      "type": "string"
+    },
+    "commune": {
+      "type": "string"
+    },
+    "arrondissement": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adhesions",
+  "info": {
+    "name": "adhesion"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nom_prenom": {
+      "type": "string"
+    },
+    "date_naissance": {
+      "type": "string"
+    },
+    "lieu_naissance": {
+      "type": "string"
+    },
+    "nom_pere": {
+      "type": "string"
+    },
+    "nom_mere": {
+      "type": "string"
+    },
+    "niveau_scolaire": {
+      "type": "string"
+    },
+    "profession": {
+      "type": "string"
+    },
+    "adresse": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "emails": {
+      "type": "string"
+    },
+    "matrimoniale": {
+      "type": "string"
+    },
+    "federation": {
+      "type": "string"
+    },
+    "section": {
+      "type": "string"
+    }
+  }
+}

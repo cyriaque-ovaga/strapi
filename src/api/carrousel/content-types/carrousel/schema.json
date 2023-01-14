@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carrousels",
+  "info": {
+    "singularName": "carrousel",
+    "pluralName": "carrousels",
+    "displayName": "Carrousel",
+    "name": "carrousel"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "photo": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "lien_article": {
+      "type": "string"
+    },
+    "titre": {
+      "type": "string"
+    },
+    "ordre": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

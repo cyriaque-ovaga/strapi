@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "comitecentrals",
+  "info": {
+    "singularName": "comitecentral",
+    "pluralName": "comitecentrals",
+    "displayName": "Comitecentral",
+    "name": "comitecentral"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "liste": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "info_sgs",
+  "info": {
+    "singularName": "info-sg",
+    "pluralName": "info-sgs",
+    "displayName": "Info-sg",
+    "name": "info-sg"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "photo": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "motdusg": {
+      "type": "richtext"
+    }
+  }
+}

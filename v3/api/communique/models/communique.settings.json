@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "communiques",
+  "info": {
+    "name": "communique"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "datos": {
+      "type": "string"
+    }
+  }
+}

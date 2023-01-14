@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carrousels",
+  "info": {
+    "name": "carrousel"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "lien_article": {
+      "type": "string"
+    },
+    "titre": {
+      "type": "string"
+    },
+    "ordre": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

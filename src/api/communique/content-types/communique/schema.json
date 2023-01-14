@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "communiques",
+  "info": {
+    "singularName": "communique",
+    "pluralName": "communiques",
+    "displayName": "Communique",
+    "name": "communique"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "datos": {
+      "type": "string"
+    }
+  }
+}

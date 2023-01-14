@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "info_sgs",
+  "info": {
+    "name": "info_sg"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "motdusg": {
+      "type": "richtext"
+    }
+  }
+}

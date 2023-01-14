@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/adhesions",
+      "handler": "adhesion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/adhesions/count",
+      "handler": "adhesion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/adhesions/:id",
+      "handler": "adhesion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/adhesions",
+      "handler": "adhesion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/adhesions/:id",
+      "handler": "adhesion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/adhesions/:id",
+      "handler": "adhesion.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

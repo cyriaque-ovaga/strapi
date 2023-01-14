@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "social_networks",
+  "info": {
+    "singularName": "social-network",
+    "pluralName": "social-networks",
+    "displayName": "Social-network",
+    "name": "social-network"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "youtubes": {
+      "type": "string"
+    }
+  }
+}
